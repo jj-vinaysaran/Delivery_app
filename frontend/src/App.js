@@ -1,13 +1,14 @@
-import RegisterForm from './Components/Onboard/RegisterForm';
+// import RegisterForm from './Components/Onboard/RegisterForm';
 import './App.css';
 import {BrowserRouter as Router ,Routes, Route} from 'react-router-dom';
 import LoginForm from './Components/Onboard/LoginForm';
 import InventoryHomePage from './Components/Home/InventoryHomepage';
 import DeliveryHomePage from './Components/Home/DeliveryHomepage';
+import RegisterForm from './Components/Onboard/RegisterForm';
 function App() {
   return (
     <div className="App">
-      <Router>
+        <Router>
         <Routes>
           <Route path='/' element={<RegisterForm/>}/>
           <Route path='/login' element={<LoginForm/>}/>
